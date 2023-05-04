@@ -1,9 +1,9 @@
-This is the final phase of a semester-long project we've been working on for CS 4400.
- 
+This is the final phase of a semester-long database we've been working on for CS 4400.
+
 The goal was to create a frontend that connects to a flight management database system using any frontend framework.
 
 # Technologies Used
-To build our web app, we used the commonly-known MERN stack but instead of MongoDB, we used mySQL. 
+To build our web app, we used the popular MERN stack but instead of MongoDB, we used mySQL. 
 
 Here's a diagram showing how our app works on a high-level:
 ![react-node-express-mysql-crud-example-architecture](https://github.gatech.edu/storage/user/46053/files/adadf5c7-1116-4a2e-ae57-6ffb16fffe85)
@@ -17,7 +17,7 @@ The mySQL database is the same as the one that we used for phase 3 with a few ch
 
 # Instructions to setup and run the app
 
-Inside the zip folder, there should be three separate folders: frontend, backend, database. 
+After cloning the repo, there should be three separate folders: frontend, backend, database. 
 
 To setup the app, we need to perform the following steps:
 
