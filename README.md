@@ -6,7 +6,8 @@ The goal was to create a frontend that connects to a flight management database 
 To build our web app, we used the popular MERN stack but instead of MongoDB, we used mySQL. 
 
 Here's a diagram showing how our app works on a high-level:
-![react-node-express-mysql-crud-example-architecture](https://github.gatech.edu/storage/user/46053/files/adadf5c7-1116-4a2e-ae57-6ffb16fffe85)
+![adadf5c7-1116-4a2e-ae57-6ffb16fffe85](https://user-images.githubusercontent.com/9218849/236276835-1d37da36-1ea5-43a1-b684-911833661cca.png)
+
 
 For the frontend, we utilized React to build the frontend with all the components and navigation. We used `react-table` to add sorting ability to the table and `react-collapsible` to collapse stored procedures to keep the interface clean. To communicate with the backend, we used `axios` which sends the data that the user inputs to the backend API.
 
@@ -30,17 +31,16 @@ To setup the app, we need to perform the following steps:
 - Once you get all the packages installed, do `node index.js` or alternatively `npm start`. This will start a backend server on `localhost:3001` where all the SQL queries are now converted into a JSON file that can be read on the web through an API.
   - To see this in action, in your browser, go to `http://localhost:3001/api/{table}` where `{table}` is the table you want to see. 
   - For example, for the airport table, you would do `http://localhost:3001/api/airport` and it'll look like this:
-  <img width="607" alt="Screenshot 2023-04-24 at 6 23 33 PM" src="https://github.gatech.edu/storage/user/46053/files/637c5a30-5e1f-4745-aba1-39159b1c55fd">
+  <img width="607" alt="Screenshot 2023-04-24 at 6 23 33 PM" src="https://user-images.githubusercontent.com/9218849/236276955-a50e615f-f3bf-4c00-9418-1f874352f1c6.png">
   
   - Postman can also be used to make `GET` or alternatively `POST` requests like so:
-  <img width="1257" alt="Screenshot 2023-05-03 at 1 00 03 PM" src="https://github.gatech.edu/storage/user/46053/files/3861f3b0-2346-48a1-8bd6-b8e31bbc3019"> 
+  <img width="607" alt="Screenshot 2023-05-03 at 1 00 03 PM" src="https://user-images.githubusercontent.com/9218849/236277087-8dd5ce0b-f67c-4ea8-a737-4329546a15a1.png"> 
 
 3) Run the Frontend
 - Just like with the backend, `cd` to the frontend repo and do `npm install` to install all the necessary packages. 
 - Now do `npm start` to start the web app and it should automatically open in your browser as a localhost.
 - If it's done correctly, it should look like this:
-
-  ![ezgif-5-393abffa21](https://github.gatech.edu/storage/user/46053/files/c45b5c40-e337-4793-8baa-471f5b114365)
+  ![c45b5c40-e337-4793-8baa-471f5b114365](https://user-images.githubusercontent.com/9218849/236277155-db9246ff-bef5-481e-93cd-da73ba7c10a7.gif)
 
 ### Debugging
 - Remember that you need to run both the frontend and backend at the same time for this to work! So first start the backend, open another terminal tab and then start the frontend. 
