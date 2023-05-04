@@ -1,3 +1,20 @@
+This is the final phase of a semester-long project we've been working on for CS 4400.
+ 
+The goal was to create a frontend that connects to a flight management database system using any frontend framework.
+
+# Technologies Used
+To build our web app, we used the commonly-known MERN stack but instead of MongoDB, we used mySQL. 
+
+Here's a diagram showing how our app works on a high-level:
+![react-node-express-mysql-crud-example-architecture](https://github.gatech.edu/storage/user/46053/files/adadf5c7-1116-4a2e-ae57-6ffb16fffe85)
+
+For the frontend, we utilized React to build the frontend with all the components and navigation. We used `react-table` to add sorting ability to the table and `react-collapsible` to collapse stored procedures to keep the interface clean. To communicate with the backend, we used `axios` which sends the data that the user inputs to the backend API.
+
+The backend was built with Node.js and Express which are commonly used to build APIs for the web. We wrote a series of `GET ` and `POST` requests that are used to communicate with the database. `GET` is used to retrieve the tables which is used for all the entities and views (19-24). `POST` is used to call the stored procedures which makes a change to the database by passing in parameters. To connect to the mySQL database, we used a library called `mysql2` which enables the database connection and querying.
+
+The mySQL database is the same as the one that we used for phase 3 with a few changes to account for edge cases that we missed.
+
+
 # Instructions to setup and run the app
 
 Inside the zip folder, there should be three separate folders: frontend, backend, database. 
@@ -27,37 +44,6 @@ To setup the app, we need to perform the following steps:
 ### Debugging
 - Remember that you need to run both the frontend and backend at the same time for this to work! So first start the backend, open another terminal tab and then start the frontend. 
 - Also if you're getting errors with packaging missing, just install that package with `npm`. So if it says in the frontend that `axios` is missing, just run `npm install axios`
-
-# Technologies Used
-To build our web app, we used the commonly-known MERN stack but instead of MongoDB, we used mySQL. 
-
-Here's a diagram showing how our app works on a high-level:
-![react-node-express-mysql-crud-example-architecture](https://github.gatech.edu/storage/user/46053/files/adadf5c7-1116-4a2e-ae57-6ffb16fffe85)
-
-For the frontend, we utilized React to build the frontend with all the components and navigation. We used `react-table` to add sorting ability to the table and `react-collapsible` to collapse stored procedures to keep the interface clean. To communicate with the backend, we used `axios` which sends the data that the user inputs to the backend API.
-
-The backend was built with Node.js and Express which are commonly used to build APIs for the web. We wrote a series of `GET ` and `POST` requests that are used to communicate with the database. `GET` is used to retrieve the tables which is used for all the entities and views (19-24). `POST` is used to call the stored procedures which makes a change to the database by passing in parameters. To connect to the mySQL database, we used a library called `mysql2` which enables the database connection and querying.
-
-The mySQL database is the same as the one that we used for phase 3 with a few changes to account for edge cases that we missed.
-
-# Explanation of how work was distributed among the team members
-Amal:
-- Created the views for each of the tables in the frontend
-- Wrote POST requests for each of the stored procedures
-  
-Amit:
-- Connected the frontend, backend, and database together. 
-- Verified the data type in the API requests matched the ones in the database (null, boolean, integer, string)
-  
-Anisha:
-- Manually tested the scripts in sql and the database
-- Added styling 
-  
-Justin:
-- Tested sql and database scripts
-- Revised formatting
-- Proofread code, debugging
-  
 
 
 
