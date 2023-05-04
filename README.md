@@ -31,7 +31,8 @@ To setup the app, we need to perform the following steps:
   - To see this in action, in your browser, go to `http://localhost:3001/api/{table}` where `{table}` is the table you want to see. 
   - For example, for the airport table, you would do `http://localhost:3001/api/airport` and it'll look like this:
   <img width="607" alt="Screenshot 2023-04-24 at 6 23 33 PM" src="https://github.gatech.edu/storage/user/46053/files/637c5a30-5e1f-4745-aba1-39159b1c55fd">
-  - You can also use postman to make a `GET` request to the same URL like so:
+  
+  - Postman can also be used to make `GET` or alternatively `POST` requests like so:
   <img width="1257" alt="Screenshot 2023-05-03 at 1 00 03 PM" src="https://github.gatech.edu/storage/user/46053/files/3861f3b0-2346-48a1-8bd6-b8e31bbc3019"> 
 
 3) Run the Frontend
