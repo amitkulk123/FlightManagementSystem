@@ -1,0 +1,14 @@
+table {
+  border: 1px solid #ddd;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+/* for the <td> alternate color for every other row */
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
